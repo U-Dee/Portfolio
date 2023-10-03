@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
     
@@ -26,15 +28,43 @@
             
            <div class="intro-wrapper">
                <div class="nav-wrapper">
-                    Nav
+                <div class="dots-wrapper">
+                    <div id="dot-1" class="browser-dot"></div>
+                    <div id="dot-2" class="browser-dot"></div> 
+                    <div id="dot-3" class="browser-dot"></div>
+                </div>
+
+                <ul id="navigation">
+                    <li><a href="a">Contact</a></li>
+                </ul>
                </div>
 
                <div class="left-column">
-                Left-column
+                <img id="profile_pic" src="Images/portpot.jpg">
+                <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+               
+                <div id="theme-options-wrapper">
+                    <div id="light-mode" class="theme-dot"></div>
+                    <div id="blue-mode" class="theme-dot"></div>
+                    <div id="green-mode" class="theme-dot"></div>
+                    <div id="purple-mode" class="theme-dot"></div>
+                </div>
+             
+                <p id="settings">"Theme settings will be saved for<br>your next visit</p>
                </div>
 
                <div class="right-column">
-                Right-column
+
+                        <div id="preview-shadow">
+                            <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3> What I Do</h3>
+                            <p>I enjoyed baking in a past life, now i'm a cyber security professional.</p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
                </div>
            </div>
         </div>
@@ -42,20 +72,113 @@
 
     <section class="s2">
         <div class="main-container">
-            ABout
+
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4> More About Me</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vero ab nostrum odio totam rem eum qui repellat quod nesciunt alias, aut aliquid incidunt voluptatem unde a consectetur? Quae, saepe.</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi unde, corporis omnis fuga corrupti optio earum, distinctio cum nihil odit iusto rem dolorum porro voluptatum molestias ex vitae veniam amet.</p>
+                </div>
+
+                <hr>
+
+                <h4>Top Expertise</h4>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellat laborum. Culpa porro quisquam architecto perferendis nulla explicabo asperiores dolor, libero, doloribus facilis, voluptatibus cumque fuga excepturi itaque tenetur voluptatem!
+                    React: <a target="_blank">Download Resume</a></p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>Rust</li>
+                            <li>Golang</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+
+                        <ul>
+                            <li>Solidity</li>
+                            <li>SQL</li>
+                            <li>PHP</li>
+                            <li>PowerShell</li>
+                            <li>C++</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+             
+                <div class="social-links">
+                   <img id="social_img" src="Images/dis.jpg">
+                   <h3>Find me on X & Instagram</h3>
+
+                   <a target="_blank" href="a"> Instagram: @myhandle</a>
+                   <br>
+                   <a target="_blank" href="a"> X: @myhandle</a>
+
+                  
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-           Portfolio
+            <h3 style="text-align: center;">Some of my past projects</h3> 
+
+           <div class="post-wrapper">
+            <div class="post">
+                <img class="thumbnail" src="Images/Screenshot (96).png">
+                <div class="post-preview">
+                    <h6 class="post-title">BegiPro</h6>
+                    <p class="post-intro">This is a partially responsive make-up artist website.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="thumbnail" src="Images/Screenshot (97).png">
+                <div class="post-preview">
+                    <h6 class="post-title">BEgiPRo</h6>
+                    <p class="post-intro">A basic website with a sidebar.</p>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="thumbnail" src="Images/Screenshot (79).png">
+                <div class="post-preview">
+                    <h6 class="post-title">BEGiPRO</h6>
+                    <p class="post-intro">Another version of the make-up artist website.</p>
+                </div>
+            </div>
          </div>
     </section>
 
     <section class="s2">
             <div class="main-container">
-                Contact
+                <h3 style="text-align: center;">Get In Touch</h3>
+
+                <form id="contact-form">
+                    <label>Name</label>
+                    <input class="input-field" type="text" name="name">
+
+                    <label>Subject</label>
+                    <input class="input-field" type="text" name="subject">
+
+                    <label>Email</label>
+                    <input class="input-field" type="text" name="email">
+
+                    <label>Messsage</label>
+                    <textarea class="input-field" name="message"></textarea>
+
+
+                    <input id="submit-btn" type="submit" value="Send">
+                </form>
             </div>
         </section>
+
+<script type="text/JavaScript" src="script.js"></script>
+
 </body>
 </html>
